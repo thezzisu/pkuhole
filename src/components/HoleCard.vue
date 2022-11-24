@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full border shadow m-4 p-4">
+  <div class="border shadow m-4 p-4">
     <div class="flex items-center justify-between pb-4">
       <RouterLink :to="`/hole/${hole.pid}`">
         <code>{{ hole.pid }}</code>
@@ -23,9 +23,9 @@
 </template>
 
 <script setup lang="ts">
-import type { IHoleListItem } from '@/api'
+import type { IHole } from '@/api'
 
 const props = defineProps<{
-  hole: IHoleListItem
+  hole: IHole
 }>()
 </script>
